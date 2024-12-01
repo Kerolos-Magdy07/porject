@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(247, 236, 222);
+  font-family: "PT Sans Caption", sans-serif;
+
+
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 70px;
+
+  margin-top: 70px;
+
+  font-family: "Pacifico", cursive;
+  position: relative;
+  color: #352e28;
+  /* isolation: isolate; */
+  font-size: 50px;
+  z-index: 99999;
+}
+.title h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  /* z-index: 9999999; */
+}
+.item {
+  width: 210px;
+  height: 20px;
+  background-color:rgb(254,194,96);
+  position: absolute;
+  top: 13%;
+  left: 43%;
+  transition: transform 0.3s ease;
+}
+.item:hover {
+  transform: scaleX(1.5);
+}
+
+.item:hover .i{
+  opacity: 1 ;
+}
+
+.bookmark {
+  border-bottom: 2px dotted;
+  border-top: 2px dotted;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.bookmark h2 {
+  color: rgb(63, 165, 91);
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+}
+.bookmark .btn {
+  background-color: #bb4120;
+  color: white;
+}
+/* .bookmark .btn:hover{
+    background-color: #972c0e;
+} */
+.index {
+  width: 100%;
+  /* height: 50PX; */
+  padding: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.index .text-capitalize {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+}
+th {
+  text-align: center;
+}
+.box-conent .btn i {
+  color: rgb(167, 7, 7);
+}
+
+.massage p {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+}
+.massage i {
+  color: rgb(167, 7, 7);
+}
+.box-conent {
+  position: relative;
+  animation: slideIn 0.5s ease-out forwards, flash 1s 0.5s infinite;
+
+}
+.box-conent .icon i {
+  color: rgb(167, 7, 7);
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: upDown 2s ease-in-out infinite;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+
+/* Flashing animation */
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(-50px); /* Move up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
